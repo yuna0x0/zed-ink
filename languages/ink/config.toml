@@ -1,0 +1,31 @@
+name = "Ink"
+grammar = "ink"
+path_suffixes = ["ink"]
+line_comments = ["// "]
+block_comment = ["/* ", " */"]
+tab_size = 4
+hard_tabs = false
+
+# Ink-specific word characters (for double-click selection)
+word_characters = ["_", "-"]
+
+# Auto-closing brackets for ink constructs
+brackets = [
+  { start = "(", end = ")", close = true, newline = false },
+  { start = "[", end = "]", close = true, newline = false },
+  { start = "{", end = "}", close = true, newline = true },
+  { start = "\"", end = "\"", close = true, newline = false, not_in = ["string"] }
+]
+
+# Scope-specific overrides
+[overrides.string]
+word_characters = [" ", "-", "_"]
+
+[overrides.comment]
+word_characters = [" ", "-", "_"]
+
+[overrides.choice]
+completion_query_characters = ["-", ">"]
+
+[overrides.code]
+completion_query_characters = [".", "=", "+", "-", "*", "/"]

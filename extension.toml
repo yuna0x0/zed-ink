@@ -1,0 +1,15 @@
+id = "ink"
+name = "Ink"
+version = "0.0.1"
+schema_version = 1
+authors = ["yuna0x0 <yuna@yuna0x0.com>"]
+description = "Ink language support for Zed"
+repository = "https://github.com/yuna0x0/zed-ink"
+
+[grammars.ink]
+repository = "https://github.com/rhizoome/tree-sitter-ink"
+rev = "3bafa20b888b97a505164fa9ee3812c331b2b809"
+
+[language_servers.ink-lsp]
+name = "Ink LSP"
+languages = ["Ink"]

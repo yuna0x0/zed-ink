@@ -1,0 +1,16 @@
+[package]
+name = "zed-ink"
+version = "0.0.1"
+edition = "2024"
+publish = false
+description = "Ink language support for Zed"
+repository = "https://github.com/yuna0x0/zed-ink"
+license = "MIT"
+keywords = ["gamedev", "language-server", "zed", "ink", "zed-extension"]
+categories = ["development-tools", "programming-languages"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+zed_extension_api = "0.6.0"
