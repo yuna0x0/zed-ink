@@ -7,7 +7,7 @@
 (gather_text) @indent
 
 ; Indent weave body content
-(weave_body_line) @indent
+; (weave_body_line) @indent
 
 ; Indent conditional blocks
 (condition_block) @indent
