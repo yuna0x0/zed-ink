@@ -13,3 +13,8 @@ rev = "3bafa20b888b97a505164fa9ee3812c331b2b809"
 [language_servers.ink-lsp]
 name = "Ink LSP"
 languages = ["Ink"]
+
+[[capabilities]]
+kind = "process:exec"
+command = "inklecate"
+args = []
